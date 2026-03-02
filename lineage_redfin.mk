@@ -28,6 +28,18 @@ WITH_GAPPS := true
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# Core Build Flags
+ TARGET_BUILD_VARIANT := -user # Build variant (eng/userdebug/user)
+ WITH_ADB_INSECURE := # Disable ADB authentication
+
+# Feature Flags
+#TARGET_INCLUDE_ACCORD := true # Include Accord app
+#TARGET_FACE_UNLOCK_SUPPORTED := # (default: TARGET_SUPPORTS_64_BIT_APPS) - Enable Face Unlock
+TARGET_SUPPORTS_QUICK_TAP := true # (default: true) - Quick Tap gesture support
+# TARGET_DISABLE_EPPE - Disable EPPE enforcement
+# TARGET_EXCLUDE_BACKUPTOOL - Exclude backup tool
+
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="redfin-user 14 UP1A.231105.001.B2 11260668 release-keys" \
     BuildFingerprint=google/redfin/redfin:14/UP1A.231105.001.B2/11260668:user/release-keys \
