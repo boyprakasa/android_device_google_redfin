@@ -29,7 +29,7 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Core Build Flags
- TARGET_BUILD_VARIANT := -user # Build variant (eng/userdebug/user)
+ TARGET_BUILD_VARIANT := # Build variant (eng/userdebug/user)
  WITH_ADB_INSECURE := # Disable ADB authentication
 
 # Feature Flags
