@@ -19,7 +19,7 @@ PRODUCT_MODEL := Pixel 5
 PRODUCT_NAME := infinity_redfin
 
 # Maintainer
-INFINITY_MAINTAINER := Boy Prakasa
+INFINITY_MAINTAINER := boyprakasa58
 
 # Whether Including Google Apps
 WITH_GAPPS := true
