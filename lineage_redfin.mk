@@ -16,10 +16,10 @@ include device/google/redfin/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 5
-PRODUCT_NAME := derpfest_redfin
+PRODUCT_NAME := superior_redfin
 
 # Maintainer
-DERPFEST_MAINTAINER := Boy Prakasa
+SUPERIOR_MAINTAINER := Boy Prakasa
 
 # Whether Including Google Apps
 WITH_GAPPS := true
