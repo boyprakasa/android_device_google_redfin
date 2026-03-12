@@ -5,7 +5,7 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/redfin/aosp_redfin.mk)
@@ -16,10 +16,10 @@ include device/google/redfin/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 5
-PRODUCT_NAME := voltage_redfin
+PRODUCT_NAME := mist_redfin
 
 # Maintainer
-VOLTAGE_MAINTAINER := @boyprakasa58
+MISTOS_MAINTAINER := @boyprakasa58
 
 # Whether Including Google Apps
 WITH_GAPPS := true
@@ -27,6 +27,13 @@ WITH_GAPPS := true
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
+
+# Enable UI enhancements
+TARGET_ENABLE_BLUR := true
+
+# Enable features
+TARGET_SUPPORTS_QUICK_TAP := true
+BYPASS_CHARGE_SUPPORTED := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="redfin-user 14 UP1A.231105.001.B2 11260668 release-keys" \
